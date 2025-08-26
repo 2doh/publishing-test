@@ -1,6 +1,6 @@
 const TextBubbleTop = () => {
   return (
-    <div className="absolute z-50 left-[0.66%] top-[78.72%] w-full max-w-[257px]">
+    <div className="absolute z-50 left-[0.66%] top-[78.72%] w-full max-w-[57.4%]">
       <svg
         viewBox="0 0 257 181"
         className="w-full h-auto"

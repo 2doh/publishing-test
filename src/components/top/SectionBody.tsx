@@ -5,17 +5,14 @@ import BlurBottom from "./BlurBottom";
 
 const SectionBody = () => {
   return (
-    <div className="w-full max-w-md mt-[17px] relative overflow-hidden flex ">
+    <div className="w-full max-w-md mt-[2.261%] relative overflow-hidden flex ">
       <div className="z-50 flex w-full h-auto items-center justify-end">
-        <Image
-          src={content}
-          alt="이미지"
-          className="w-full h-auto aspect-[313/534] max-h-[534px] max-w-[313px]"
-        />
+        <Image src={content} alt="이미지" className="h-[100%] w-[67%]" />
       </div>
       <svg
-        className="aspect-[345/336] absolute top-[15%] left-[0%] w-full h-auto"
+        className="absolute top-[15%] left-[0%] w-full h-auto"
         viewBox="0.65 265.65 306.31 356.9"
+        preserveAspectRatio="xMidYMid slice"
       >
         <polygon
           fill="#D1C3AB"
@@ -26,6 +23,7 @@ const SectionBody = () => {
       <svg
         className="absolute top-[30%] right-[-50%] w-full h-auto"
         viewBox="-7 329.5 618 390.5"
+        preserveAspectRatio="xMidYMid slice"
       >
         <polygon
           fill="#D1C3AB"

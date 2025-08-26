@@ -8,14 +8,14 @@ import SectionTop from "@/layout/SectionTop";
 
 const index = () => {
   return (
-    <div className="max-w-md w-full bg-emerald-300 flex flex-col justify-center items-center my-0 mx-auto">
+    <div className="max-w-md h-auto w-full bg-emerald-300 flex flex-col justify-center items-center my-0 mx-auto">
       <SectionTop>
         <BgWords></BgWords>
         <BlurTop></BlurTop>
         <TitleBox></TitleBox>
         <SectionBody></SectionBody>
         <TextBubbleTop></TextBubbleTop>
-        <div className="bg-[#F3F2EF] absolute bottom-0 w-full h-auto aspect-[448/100]"></div>
+        <div className="bg-[#F3F2EF] w-full h-auto aspect-[448/100]"></div>
       </SectionTop>
       <SectionBottom></SectionBottom>
     </div>
