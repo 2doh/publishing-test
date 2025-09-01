@@ -7,7 +7,7 @@ const BgDeck = () => {
     <Image
       src={deck}
       alt="장식"
-      className="w-[43.59%] h-[42.1%] mt-[41%] opacity-80"
+      className="w-[43.59%] h-[42.1%] mt-[41%] opacity-80 max-w-[153px] max-h-[120px]"
     />
   );
 };

@@ -1,3 +1,4 @@
+import TextBubbleBottom from "@/components/bottom/TextBubbleBottom";
 import BgDeck from "@/components/middle/BgDeck";
 import SectionBodyMiddle from "@/components/middle/SectionBodyMiddle";
 import BgWords from "@/components/top/BgWords";
@@ -13,18 +14,20 @@ const index = () => {
   return (
     <div className="max-w-md h-auto w-full bg-[#F3F2EF] flex flex-col my-0 mx-auto">
       <SectionTop>
-        <BgWords></BgWords>
-        <BlurTop></BlurTop>
-        <TitleBox></TitleBox>
-        <SectionBody></SectionBody>
-        <TextBubbleTop></TextBubbleTop>
+        <BgWords />
+        <BlurTop />
+        <TitleBox />
+        <SectionBody />
+        <TextBubbleTop />
         <div className="bg-[#F3F2EF] w-full h-auto aspect-[448/100]" />
       </SectionTop>
       <SectionMiddle>
-        <BgDeck></BgDeck>
-        <SectionBodyMiddle></SectionBodyMiddle>
+        <BgDeck />
+        <SectionBodyMiddle />
       </SectionMiddle>
-      <SectionBottom></SectionBottom>
+      <SectionBottom>
+        <TextBubbleBottom></TextBubbleBottom>
+      </SectionBottom>
     </div>
   );
 };

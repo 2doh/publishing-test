@@ -4,8 +4,8 @@ import artwork from "../../images/00751-3702098430 1.jpg";
 
 const SectionBodyMiddle = () => {
   return (
-    <div className="w-[45.87%] h-auto flex justify-end">
-      <Image src={artwork} alt="이미지" className="w-[74.53%]" />
+    <div className="aspect-[120/285] w-[34.2%] max-w-[120px] max-h-[285px]">
+      <Image src={artwork} alt="이미지" />
     </div>
   );
 };

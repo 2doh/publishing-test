@@ -6,7 +6,7 @@ export interface SectionProps {
 
 const SectionTop = ({ children }: SectionProps) => {
   return (
-    <div className="w-full bg-[#937C5F] flex flex-col items-center my-0 mx-auto relative ">
+    <div className="w-full bg-[#937C5F] flex flex-col items-center my-0 mx-auto relative overflow-hidden">
       {/* aspect-[445/887.36] */}
       {children}
     </div>
