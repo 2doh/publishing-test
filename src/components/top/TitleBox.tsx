@@ -8,7 +8,7 @@ const TitleBox = () => {
     content: "나의 사주 팔자",
   };
   return (
-    <div className="w-[35.04%] h-[11.2%] mt-[84px] flex flex-col items-center justify-center z-50">
+    <div className="w-[35.04%] h-[11.2%] mt-[20%] flex flex-col items-center justify-center z-50">
       <span className="text-white max-xs:text-[4.5vw]  leading-[100%]">
         {tempData.title}
       </span>

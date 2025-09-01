@@ -1,4 +1,5 @@
 import BgDeck from "@/components/middle/BgDeck";
+import SectionBodyMiddle from "@/components/middle/SectionBodyMiddle";
 import BgWords from "@/components/top/BgWords";
 import BlurTop from "@/components/top/BlurTop";
 import SectionBody from "@/components/top/SectionBody";
@@ -10,7 +11,7 @@ import SectionTop from "@/layout/SectionTop";
 
 const index = () => {
   return (
-    <div className="max-w-md h-auto w-full bg-[#F3F2EF] flex flex-col justify-center items-center my-0 mx-auto">
+    <div className="max-w-md h-auto w-full bg-[#F3F2EF] flex flex-col my-0 mx-auto">
       <SectionTop>
         <BgWords></BgWords>
         <BlurTop></BlurTop>
@@ -21,6 +22,7 @@ const index = () => {
       </SectionTop>
       <SectionMiddle>
         <BgDeck></BgDeck>
+        <SectionBodyMiddle></SectionBodyMiddle>
       </SectionMiddle>
       <SectionBottom></SectionBottom>
     </div>

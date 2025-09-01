@@ -3,7 +3,7 @@ import { SectionProps } from "./SectionTop";
 
 const SectionMiddle = ({ children }: SectionProps) => {
   return (
-    <div className="w-full bg-[#F3F2EF] my-0 mx-auto relative overflow-hidden">
+    <div className="w-[93%] bg-[#F3F2EF] my-0 ml-0 flex justify-between">
       {children}
     </div>
   );
