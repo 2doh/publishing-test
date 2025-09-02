@@ -1,10 +1,8 @@
 import React from "react";
-import textbubble from "../../images/Union.svg";
-import Image from "next/image";
 
-const TextBubbleBottom = () => {
+const TextBubbleMiddle = () => {
   return (
-    <div className="absolute z-50">
+    <div className="absolute z-50 bottom-0 bg-amber-50">
       <svg
         width="281"
         height="181"
@@ -64,4 +62,4 @@ const TextBubbleBottom = () => {
   );
 };
 
-export default TextBubbleBottom;
+export default TextBubbleMiddle;
