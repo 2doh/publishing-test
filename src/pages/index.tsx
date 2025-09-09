@@ -1,5 +1,5 @@
-import BgDeck from "@/components/middle/BgDeck";
-import SectionBodyMiddle from "@/components/middle/SectionBodyMiddle";
+import MiddleLower from "@/components/middle/MiddleLower";
+import MiddleUpper from "@/components/middle/MiddleUpper";
 import BgWords from "@/components/top/BgWords";
 import BlurTop from "@/components/top/BlurTop";
 import SectionBody from "@/components/top/SectionBody";
@@ -20,8 +20,8 @@ const index = () => {
         <div className="bg-[#F3F2EF] w-full h-auto aspect-[448/100]" />
       </SectionTop>
       <SectionMiddle>
-        <BgDeck />
-        <SectionBodyMiddle />
+        <MiddleUpper />
+        <MiddleLower />
       </SectionMiddle>
     </div>
   );
