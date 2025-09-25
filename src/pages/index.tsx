@@ -1,3 +1,4 @@
+import Table from "@/components/bottom/Table";
 import MiddleLower from "@/components/middle/MiddleLower";
 import MiddleUpper from "@/components/middle/MiddleUpper";
 import BgWords from "@/components/top/BgWords";
@@ -5,6 +6,7 @@ import BlurTop from "@/components/top/BlurTop";
 import SectionBody from "@/components/top/SectionBody";
 import TextBubbleTop from "@/components/top/TextBubbleTop";
 import TitleBox from "@/components/top/TitleBox";
+import SectionBottom from "@/layout/SectionBottom";
 import SectionMiddle from "@/layout/SectionMiddle";
 import SectionTop from "@/layout/SectionTop";
 
@@ -23,6 +25,9 @@ const index = () => {
         <MiddleUpper />
         <MiddleLower />
       </SectionMiddle>
+      <SectionBottom>
+        <Table></Table>
+      </SectionBottom>
     </div>
   );
 };

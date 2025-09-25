@@ -54,6 +54,23 @@ const TextBubbleTop = () => {
             />
           </filter>
         </defs>
+        <text
+          x="50%"
+          y="50%"
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fill="black"
+        >
+          <tspan x="50%" dy="-0.6em">
+            이제 본격적으로
+          </tspan>
+          <tspan x="50%" dy="1.2em">
+            OO님의 사주팔자를
+          </tspan>
+          <tspan x="50%" dy="1.2em">
+            분석해볼 차례네요.
+          </tspan>
+        </text>
       </svg>
     </div>
   );

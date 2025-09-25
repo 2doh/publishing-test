@@ -1,6 +1,6 @@
 const TextBubbleBottom = () => {
   return (
-    <div className="absolute z-50 left-[0.66%] w-full max-w-[63.7%] top-[-19%]">
+    <div className="absolute z-50 left-[0.66%] w-full max-w-[63.7%] top-[-28%]">
       <svg
         className="w-full h-auto"
         viewBox="0 0 281 161"
@@ -54,6 +54,20 @@ const TextBubbleBottom = () => {
             />
           </filter>
         </defs>
+        <text
+          x="50%"
+          y="50%"
+          textAnchor="middle"
+          dominantBaseline="middle"
+          fill="black"
+        >
+          <tspan x="50%" dy="-2em">
+            제가 oo님의 사주를
+          </tspan>
+          <tspan x="50%" dy="1.2em">
+            보기 쉽게 표로 정리했어요
+          </tspan>
+        </text>
       </svg>
     </div>
   );

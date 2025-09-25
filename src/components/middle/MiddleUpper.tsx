@@ -3,7 +3,7 @@ import SectionBodyMiddle from "@/components/middle/SectionBodyMiddle";
 
 const MiddleUpper = () => {
   return (
-    <div className="w-[93%] aspect-[351/285] max-h-[285px] bg-amber-300 my-0 ml-0 flex justify-between">
+    <div className="w-[93%] max-h-[285px] aspect-[351/285] relative bg-[#F3F2EF] flex justify-end">
       <BgDeck />
       <SectionBodyMiddle />
     </div>
