@@ -52,15 +52,15 @@ const TableContent = () => {
     ],
     [
       { text: "十星", rowText: "(십성)" },
-      { text: "比肩", rowText: "陽木" },
-      { text: "劫財", rowText: "陰火" },
-      { text: "食神", rowText: "陰水" },
+      { text: "(없음)", rowText: "" },
+      { text: "(없음)", rowText: "" },
+      { text: "(없음)", rowText: "" },
       { text: ["偏財", "太極", "文昌"] },
     ],
   ];
 
   return (
-    <div className="mx-auto mt-[4.2%] w-[88.31%] h-[76.3%] ">
+    <div className="mx-auto my-[4.2%] w-[88.31%] ">
       {tableData.map((row, rowIndex) => {
         const isLastRow = rowIndex === tableData.length - 1;
         return (
@@ -76,7 +76,7 @@ const TableContent = () => {
                 <div
                   key={colIndex}
                   className={`
-                  px-[10%] py-[10%] text-center whitespae-pre-line flex justify-center items-center flex-col border-r border-b border-black
+                  px-[10%] py-[20%] text-center whitespae-pre-line flex justify-center items-center flex-col border-r border-b border-black whitespace-nowrap
                   ${!isHeaderCol && !isHeaderRow ? "bg-[#fff]" : ""}
                   ${isLastRow ? "h-auto" : ""}
                 `}
@@ -85,7 +85,7 @@ const TableContent = () => {
                     ""
                   ) : cell.color ? (
                     <div
-                      className={`rounded-[22%] w-full h-full flex flex-col justify-center items-center ${cell.color} aspect-[55.5/55.5] ${
+                      className={`rounded-[22%] w-full h-full flex flex-col justify-center items-center ${cell.color} aspect-[55.5/55.5] whitespace-nowrap pt-[15%] ${
                         cell.color !== "bg-[#fff]"
                           ? "text-white"
                           : "text-black border border-black"
@@ -93,30 +93,44 @@ const TableContent = () => {
                     >
                       {Array.isArray(cell.text) ? (
                         cell.text.map((t, i) => (
-                          <div key={i} className="leading-tight">
+                          <div
+                            key={i}
+                            className="leading-tight whitespace-nowrap"
+                          >
                             {t}
                           </div>
                         ))
                       ) : (
                         <>
-                          <div className="text-[1.5rem]">{cell.text}</div>
+                          <div className="text-[clamp(10px,5vw,18px)] whitespace-nowrap">
+                            {cell.text}
+                          </div>
                           {cell.rowText && (
-                            <div className="text-[0.5rem]">{cell.rowText}</div>
+                            <div className="text-[clamp(8px,1vw,14px)] whitespace-nowrap">
+                              {cell.rowText}
+                            </div>
                           )}
                         </>
                       )}
                     </div>
                   ) : Array.isArray(cell.text) ? (
                     cell.text.map((t, i) => (
-                      <div key={i} className="leading-tight">
+                      <div
+                        key={i}
+                        className="leading-loose text-[clamp(10px,5vw,18px)] whitespace-nowrap"
+                      >
                         {t}
                       </div>
                     ))
                   ) : (
                     <>
-                      <div className="text-[1.2rem]"> {cell.text}</div>
+                      <div className="text-[clamp(10px,5vw,18px)] whitespace-nowrap">
+                        {cell.text}
+                      </div>
                       {cell.rowText && (
-                        <div className="text-[0.7rem]">{cell.rowText}</div>
+                        <div className="text-[clamp(8px,1vw,14px)] whitespace-nowrap">
+                          {cell.rowText}
+                        </div>
                       )}
                     </>
                   )}
